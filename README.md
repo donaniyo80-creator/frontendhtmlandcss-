@@ -39,14 +39,7 @@ project-folder/
 - Full form page includes many input types and form-related elements
 - Styling included via `style.css`, no JavaScript
 
-## Screenshot
-Add at least one screenshot after you run the site locally.
 
-1. Create a folder named `screenshots/`
-2. Save a screenshot of the homepage as `screenshots/home.png`
-3. The image will display here:
-
-![Home page screenshot](screenshots/home.png)
 
 ## Notes
 - Some media sources use public demo URLs (MDN interactive examples) to keep the repository lightweight.
