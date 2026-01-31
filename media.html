@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Media gallery page: images, audio, video, and canvas (HTML-only).">
+  <meta name="author" content="NIYOMUKIZA Donatien">
+  <title>Media — NIYOMUKIZA Donatien</title>
+
+  <base href="./">
+  <link rel="icon" href="assets/profile.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Media</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section aria-labelledby="gallery">
+      <h2 id="gallery">Image gallery</h2>
+
+      <article>
+        <h3>Picture element</h3>
+        <figure>
+          <picture>
+            <source srcset="assets/pexels-ketut-subiyanto-4584061.jpg" type="image/jpeg">
+            <img src="assets/pexels-ketut-subiyanto-4584061.jpg alt="Profile illustration" width="220" height="220">
+          </picture>
+          <figcaption>Profile image displayed via &lt;picture&gt; with &lt;source&gt;.</figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <h3>Image map</h3>
+        <p>
+          Click the circle area on the image map to go home.
+        </p>
+        <img src="assets/now.jpg" alt="Profile icon with image map" width="220" height="220" usemap="#profilemap">
+        <map name="profilemap">
+          <area shape="circle" coords="110,110,90" href="index.html" alt="Go to Home">
+        </map>
+      </article>
+    </section>
+
+    
+    <hr>
+
+    <section aria-labelledby="video">
+      <h2 id="video">Video</h2>
+      <figure>
+        <figcaption>Sample video (remote CC0 example) with captions track</figcaption>
+        <video controls width="640">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          <track kind="captions" src="assets/captions.vtt" srclang="en" label="English" default>
+          Your browser does not support the video tag.
+        </video>
+      </figure>
+    </section>
+
+    <hr>
+
+    
+  </main>
+
+  <footer>
+    <hr>
+    <p>
+      Back to <a href="index.html">Home</a>
+    </p>
+  </footer>
+</body>
+</html>

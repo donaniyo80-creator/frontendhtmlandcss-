@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal blog of NIYOMUKIZA Donatien.">
+  <meta name="author" content="NIYOMUKIZA Donatien">
+  <title>NIYOMUKIZA Donatien — Personal Blog</title>
+
+  <base href="./">
+  <link rel="icon" href="assets/profile.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <h1>NIYOMUKIZA Donatien</h1>
+    <h2>Personal Blog (HTML-only)</h2>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p>
+      Jump to: <a href="#latest">Latest Post</a> • <a href="#highlights">Highlights</a> • <a href="#footer">Footer</a>
+    </p>
+    <hr>
+    <div class="hero">
+      <p class="tagline">Writing about learning, building, and practical projects.</p>
+      <p><a class="cta" href="#latest">Read the latest post</a></p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="welcome">
+      <h3 id="welcome">Welcome</h3>
+
+    
+      <article>
+        <h4>Why this site exists</h4>
+        <p>
+          This is a <strong>multi-page website</strong> built using <em>only HTML</em>.
+          It focuses on structure, meaning, and readability — not styling.
+        </p>
+        <p>
+          You will see examples of semantic layout, media, forms, tables, and many core tags.
+          <br>
+          Some content is intentionally simple so the HTML stays easy to read.
+        </p>
+
+        <figure>
+          <img src="assets/now.jpg" alt="Profile icon" width="128" height="128">
+          <figcaption>A small illustration used as the site icon and profile image.</figcaption>
+        </figure>
+      </article>
+
+      
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="latest">
+      <h3 id="latest">Latest Post</h3>
+      <article>
+        <h4>Building without CSS or JavaScript</h4>
+        <p>
+          When you remove styling and scripting, the structure matters more:
+          headings, sections, meaningful links, and readable text.
+        </p>
+        <p>
+          Read more details on the <a href="about.html">About</a> page or explore the <a href="services.html">Services</a> page.
+        </p>
+      </article>
+
+      <aside>
+        <h5>Post metadata</h5>
+        <p>
+          Published: <time datetime="2026-01-26">January 26, 2026</time>
+        </p>
+      </aside>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="highlights">
+      <h3 id="highlights">Highlights</h3>
+      <article>
+        <h4>What you can do next</h4>
+        <ul>
+          <li>View a gallery and media on <a href="media.html">Media</a>.</li>
+          <li>See structured lists and tables on <a href="services.html">Services</a>.</li>
+          <li>Send a message using the full form on <a href="form.html">Form</a>.</li>
+        </ul>
+      </article>
+
+      
+      <article>
+        <h4>Reusable HTML (template example)</h4>
+        <p>This page includes a <strong>template</strong> that could represent a blog card.</p>
+        <template id="post-card-template">
+          <article>
+            <h5>Template Title</h5>
+            <p>Template body goes here.</p>
+            <p><a href="#top">Back to top</a></p>
+          </article>
+        </template>
+      </article>
+    </section>
+
+   
+
+      <article>
+        <h4>Interactive placeholders</h4>
+        <p>Canvas placeholder (no script):</p>
+        <canvas width="320" height="120">A fallback message for browsers without canvas support.</canvas>
+
+        <p>Embedded object as an example:</p>
+        <object data="assets/sample.svg" type="image/svg+xml" aria-label="sample svg">Fallback: SVG not supported.</object>
+      </article>
+    </section>
+
+    <noscript>
+      <p>
+        <strong>Note:</strong> JavaScript is disabled. This website does not require it.
+      </p>
+    </noscript>
+  </main>
+
+  <footer id="footer">
+    <hr>
+    <p>
+      <a href="#top">Back to top</a>
+    </p>
+    <p>
+      &copy; <time datetime="2026">2026</time> NIYOMUKIZA Donatien
+    </p>
+  </footer>
+</body>
+</html>

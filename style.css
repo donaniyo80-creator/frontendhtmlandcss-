@@ -1,0 +1,409 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Ensure consistent line height for readability */
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+body {
+  /* Use a system font stack (no webfont dependencies) */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+  max-width: 100%;
+}
+
+/*2. TYPOGRAPHY*/
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: #0066cc;
+}
+
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+p { margin-bottom: 1rem; }
+
+/*   3. LINKS */
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:visited { color: #4c1980; }
+a:hover { color: #264fa0; font-weight: bold; }
+a:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+   /* 4. HEADER & NAVIGATION */
+
+header {
+  background-color: #fff;
+  border-bottom:1px solid #0066cc;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+nav li { margin: 0; }
+
+nav a {
+  color: #0066cc;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+nav a[aria-current="page"] {
+  background-color: #e6f2ff;
+  font-weight: bold;
+  color: #003399;
+}
+
+/* 5. MAIN CONTENT */
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+section { margin-bottom: 2rem; }
+
+article {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid #0066cc;
+}
+
+aside {
+  background-color: #f0f6ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  border-left: 4px solid #6600cc;
+}
+
+/*6. FOOTER */
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #0066cc;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #666;
+}
+
+/* 7. FORMS */
+
+form { margin: 1.5rem 0; }
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+  color: #0066cc;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+input, textarea, select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover { background-color: #003399; }
+button:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+/*   8. TABLES*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: #fff;
+}
+
+caption {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #0066cc;
+  text-align: left;
+}
+
+thead { background-color: #e6f2ff; }
+
+th {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #0066cc;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover { background-color: #cdd7e6; }
+
+/*
+   9. LISTS
+   */
+
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+li { margin-bottom: 0.5rem; }
+
+dl { margin-bottom: 1rem; }
+
+dt {
+  font-weight: bold;
+  color: #0066cc;
+  margin-top: 0.75rem;
+}
+
+dd {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 10. MEDIA & FIGURES*/
+
+img, video, audio {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+figure {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* 11. TEXT FORMATTING */
+
+strong { color: #333; font-weight: bold; }
+em { font-style: italic; color: #555; }
+mark {
+  background-color: #ffeb3b;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+small { font-size: 0.875rem; color: #666; }
+
+code, pre {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  color: #d63384;
+}
+
+code { padding: 2px 6px; font-size: 0.9rem; }
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+}
+
+pre code {
+  background-color: transparent;
+  color: #333;
+  padding: 0;
+}
+
+kbd {
+  background-color: #333;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.875rem;
+}
+
+samp {
+  background-color: #e6f2ff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", Courier, monospace;
+  color: #0066cc;
+}
+
+var { font-style: italic; color: #6600cc; }
+
+address {
+  font-style: italic;
+  background-color: #f0f6ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+blockquote {
+  border-left: 4px solid #6600cc;
+  margin-left: 0;
+  padding-left: 1.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+/*   12. DETAILS & SUMMARY   */
+
+details {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fafafa;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0066cc;
+  user-select: none;
+}
+
+summary:hover { text-decoration: underline; }
+
+/*    13. PROGRESS & METER
+   */
+
+progress, meter {
+  width: 100%;
+  max-width: 300px;
+  height: 24px;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+/* 14. HORIZONTAL RULE  */
+
+hr {
+  border: none;
+  border-top: 2px solid #ddd;
+  margin: 2rem 0;
+}
+
+/*   15. SKIP LINKS (ACCESSIBILITY) */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #0066cc;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus { top: 0; }
+
+/* 16. RESPONSIVE DESIGN (Mobile-first) */
+
+@media (max-width: 768px) {
+  body { padding: 0.5rem; }
+  main { padding: 1rem; }
+  nav ul { flex-direction: column; gap: 0.5rem; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  input, textarea, select { max-width: 100%; }
+  table { font-size: 0.9rem; }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A full HTML-only form demonstrating common input types.">
+  <meta name="author" content="NIYOMUKIZA Donatien">
+  <title>Form — NIYOMUKIZA Donatien</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    label input[type="radio"], label input[type="checkbox"]   {
+      width: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Form</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="form.html" aria-current="page">Form</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section aria-labelledby="full-form">
+      <h2 id="full-form">Contact & feedback form </h2>
+     
+        <div class="form">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Identity</legend>
+
+          <p>
+            <label for="fullName">Full name</label><br>
+            <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="password">Password (demo)</label><br>
+            <input id="password" name="password" type="password">
+          </p>
+
+          <p>
+            <label for="tel">Phone</label><br>
+            <input id="tel" name="tel" type="tel" autocomplete="tel">
+          </p>
+
+          <p>
+            <label for="url">Website</label><br>
+            <input id="url" name="url" type="url" placeholder="https://example.com">
+          </p>
+
+          
+
+          <input name="hiddenToken" type="hidden" value="demo-only">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>
+            <label for="role">Your role</label><br>
+            <select id="role" name="role">
+             
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+            </select>
+          </p>
+
+          <p>
+            Newsletter:
+            <label><input type="checkbox" name="newsletter" value="yes"> Subscribe</label>
+          </p>
+
+          <p>
+            Preferred contact method:<br>
+            <label><input type="radio" name="contactMethod" value="email" checked> Email</label><br>
+            <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+          </p>
+
+          
+        </fieldset>
+
+        <fieldset>
+          <legend>Scheduling & numbers</legend>
+          <p>
+            <label for="date">Preferred date</label><br>
+            <input id="date" name="date" type="date">
+          </p>
+
+          <p>
+            <label for="time">Preferred time</label><br>
+            <input id="time" name="time" type="time">
+          </p>
+
+          <p>
+            <label for="datetime">Preferred date & time</label><br>
+            <input id="datetime" name="datetime" type="datetime-local">
+          </p>
+
+          <p>
+            <label for="month">Preferred month</label><br>
+            <input id="month" name="month" type="month">
+          </p>
+
+          <p>
+            <label for="week">Preferred week</label><br>
+            <input id="week" name="week" type="week">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message & attachments</legend>
+
+          <p>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message..."></textarea>
+          </p>
+
+          <p>
+            <label for="file">Attach a file</label><br>
+            <input id="file" name="file" type="file" accept=".pdf,.png,.jpg,.txt">
+          </p>
+
+    
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+          
+        </p>
+      </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>
+      Back to <a href="index.html">Home</a>
+    </p>
+  </footer>
+</body>
+</html>

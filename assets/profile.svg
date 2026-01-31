@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-label="Profile illustration">
+  <title>NIYOMUKIZA Donatien</title>
+  <desc>Simple SVG placeholder used as a profile image and favicon.</desc>
+  <circle cx="110" cy="110" r="100" fill="white" stroke="black" stroke-width="4"/>
+  <circle cx="85" cy="95" r="10" fill="black"/>
+  <circle cx="135" cy="95" r="10" fill="black"/>
+  <path d="M 70 140 Q 110 170 150 140" fill="none" stroke="black" stroke-width="4"/>
+  <text x="110" y="205" font-size="12" text-anchor="middle" fill="black">HTML-only blog</text>
+</svg>
